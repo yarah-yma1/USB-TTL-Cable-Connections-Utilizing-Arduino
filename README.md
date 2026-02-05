@@ -48,11 +48,11 @@ To confirm three Python files have been provided to interface with the serial co
 - twoCOM.py –-> read two COM ports
 #### The images below shows the outputs/results of the following scripts. 
 - This one is for the loopCOM.py in which it confirms the port names. 
--- <img width="488" height="164" alt="image" src="https://github.com/user-attachments/assets/6858026d-639d-4458-a507-eb2b03ccafc6" />
+--> <img width="488" height="164" alt="image" src="https://github.com/user-attachments/assets/6858026d-639d-4458-a507-eb2b03ccafc6" />
 - This one is for readCOM.py in which it confirms that a specific port is being read 
--- <img width="489" height="103" alt="image" src="https://github.com/user-attachments/assets/d761a1b9-51bd-4feb-adfc-1a036af0d491" />
+--> <img width="489" height="103" alt="image" src="https://github.com/user-attachments/assets/d761a1b9-51bd-4feb-adfc-1a036af0d491" />
 - This one is for twoCOM.py in which it confirms both ports are being read, in the image serial is usb and serial1 is through ttl.
--- <img width="497" height="86" alt="image" src="https://github.com/user-attachments/assets/988d5b3a-3a72-43c1-b7d7-887a3442c774" />
+--> <img width="497" height="86" alt="image" src="https://github.com/user-attachments/assets/988d5b3a-3a72-43c1-b7d7-887a3442c774" />
 ## Discussion
 It is important to understand serial communication is exptremly important when utlizing microcontrollers in projects. The project shows that an arduino uno can sucessfuly implement a dual serial communication by putting serial hardware and serial software together through utlizing a ttl cable and usb. There was also a sucessful use of python through serial communication confirming through various checks. Overall, the project sucessfully shows dual serial communication through an arduino uno is possible!
 ## References 
