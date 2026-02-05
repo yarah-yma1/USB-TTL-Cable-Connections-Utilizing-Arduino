@@ -10,10 +10,10 @@
 - [References](#references)
 
 ## Introduction
-This project demonstrates dual serial communication using an Arduino Uno through both USB (hardware serial) and a TTL adapter (software serial). Python scripts are used to identify and read data from one or multiple serial ports simultaneously, enabling external data monitoring without relying on the Arduino IDE Serial Monitor. This tutorial will consist of 2 parts. The first part will consist of reading in from one port the USB hardware serial and the second part will consist of running both a TTL and USB serial. [1]
+This project demonstrates dual serial communication using an Arduino Uno through both USB (hardware serial) and a TTL adapter (software serial). Python scripts are used to identify and read data from one or multiple serial ports simultaneously, enabling external data monitoring without relying on the Arduino IDE Serial Monitor. This tutorial will consist of 2 parts. The first part will consist of reading in from one port the USB hardware serial and the second part will consist of running both a TTL and USB serial.
 
 ## Background
-Serial communication is a fundamental method for transmitting data between microcontrollers and external devices. The Arduino Uno features a single hardware serial interface over USB, but additional serial ports can be implemented using the SoftwareSerial library. Python, through the PySerial library, enables real time serial data acquisition for analysis and debugging outside of embedded development environments.
+Serial communication is an important method for transmitting data between microcontrollers and outside devices. The Arduino Uno has a single hardware serial interface over USB, but additional serial ports can be implemented using the SoftwareSerial library. Through the PySerial library python can allow for real time serial data acquisition for analysis and debugging outside of embedded development environments. [1]
 
 ## Build of Materials 
 - Arduino Uno
@@ -57,8 +57,8 @@ To confirm three Python files have been provided to interface with the serial co
 It is important to understand serial communication is exptremly important when utlizing microcontrollers in projects. The project shows that an arduino uno can sucessfuly implement a dual serial communication by putting serial hardware and serial software together through utlizing a ttl cable and usb. There was also a sucessful use of python through serial communication confirming through various checks. Overall, the project sucessfully shows dual serial communication through an arduino uno is possible!
 ## References 
 - [1]Arduino.cc, 2024. https://docs.arduino.cc/learn/built-in-libraries/software-serial/
-- [2]“USB to TTL communicates, but won’t upload,” Arduino Forum, Jun. 19, 2022. https://forum.arduino.cc/t/usb-to-ttl-communicates-but-wont-upload/1004578/7 (accessed Feb. 05, 2026).
-- [3]“USB To TTL Serial 3.3V Adapter Cable FT232RL” Dtechelectronics.com, 2026. https://www.dtechelectronics.com/dtech-ftdi-usb-to-ttl-serial-3-3v-adapter-cable-ft232rl-chip-6ft-1-8m-black-tx-rx-signal-4-pin-0-1-inch-pitch-female-socket-windows-10-8-7-xp-vista_p319.html (accessed Feb. 05, 2026).
+- [2]“USB to TTL communicates, but won’t upload,” Arduino Forum, Jun. 19, 2022. https://forum.arduino.cc/t/usb-to-ttl-communicates-but-wont-upload/1004578/7
+- [3]“USB To TTL Serial 3.3V Adapter Cable FT232RL” Dtechelectronics.com, 2026. https://www.dtechelectronics.com/dtech-ftdi-usb-to-ttl-serial-3-3v-adapter-cable-ft232rl-chip-6ft-1-8m-black-tx-rx-signal-4-pin-0-1-inch-pitch-female-socket-windows-10-8-7-xp-vista_p319.html 
 ‌
 ‌
 ‌
