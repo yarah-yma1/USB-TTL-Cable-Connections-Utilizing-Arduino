@@ -10,7 +10,7 @@
 - [References](#references)
 
 ## Introduction
-This project demonstrates dual serial communication using an Arduino Uno through both USB (hardware serial) and a TTL adapter (software serial). Python scripts are used to identify and read data from one or multiple serial ports simultaneously, enabling external data monitoring without relying on the Arduino IDE Serial Monitor. This tutorial will consist of 2 parts. The first part will consist of reading in from one port the USB hardware serial and the second part will consist of running both a TTL and USB serial.
+This project demonstrates dual serial communication using an Arduino Uno through both USB (hardware serial) and a TTL adapter (software serial). Python scripts are used to identify and read data from one or multiple serial ports simultaneously, enabling external data monitoring without relying on the Arduino IDE Serial Monitor. This tutorial will consist of 2 parts. The first part will consist of reading in from one port the USB hardware serial and the second part will consist of running both a TTL and USB serial. [1]
 
 ## Background
 Serial communication is a fundamental method for transmitting data between microcontrollers and external devices. The Arduino Uno features a single hardware serial interface over USB, but additional serial ports can be implemented using the SoftwareSerial library. Python, through the PySerial library, enables real time serial data acquisition for analysis and debugging outside of embedded development environments.
@@ -18,7 +18,7 @@ Serial communication is a fundamental method for transmitting data between micro
 ## Build of Materials 
 - Arduino Uno
 - USB Type-B cable
-- TTL-to-USB serial adapter
+- TTL-to-USB cable
 - Jumper wires
 - Computer with Python installed + Arduino IDE
 - VS Code
@@ -31,9 +31,9 @@ For the second part you will open a new sketch and paste the same code. You shou
 Connect the arduino uno board to the computer one side through the standard usb and the other side through the ttl side (for second part of experiment). In the directions below it will show the wiring for the arduino uno with the ttl cable. 
 
 ### Wiring Diagram
-Here is the general wiring of how the arduino and ttl cable should interact [1]. It is important to note be sure to place the ttl in pins 2,3 as 0,1 is the standard use for the usb cable and the code wont be able to run both at the same time on the same pins. 
+Here is the general wiring of how the arduino and ttl cable should interact [2]. It is important to note be sure to place the ttl in pins 2,3 as 0,1 is the standard use for the usb cable and the code wont be able to run both at the same time on the same pins. 
 <img width="993" height="412" alt="image" src="https://github.com/user-attachments/assets/c04120d3-758b-4c5a-b012-c240973c5b4b" />
-Below is a general idea of what the colors represent on a standard ttl cable [2].
+Below is a general idea of what the colors represent on a standard ttl cable [3].
 <img width="895" height="555" alt="image" src="https://github.com/user-attachments/assets/4023c3fa-3a94-4f0c-846a-d00024cb062b" />
 
 ### Arduino Duties 
@@ -56,7 +56,12 @@ To confirm three Python files have been provided to interface with the serial co
 ## Discussion
 It is important to understand serial communication is exptremly important when utlizing microcontrollers in projects. The project shows that an arduino uno can sucessfuly implement a dual serial communication by putting serial hardware and serial software together through utlizing a ttl cable and usb. There was also a sucessful use of python through serial communication confirming through various checks. Overall, the project sucessfully shows dual serial communication through an arduino uno is possible!
 ## References 
-
+- [1]Arduino.cc, 2024. https://docs.arduino.cc/learn/built-in-libraries/software-serial/
+- [2]“USB to TTL communicates, but won’t upload,” Arduino Forum, Jun. 19, 2022. https://forum.arduino.cc/t/usb-to-ttl-communicates-but-wont-upload/1004578/7 (accessed Feb. 05, 2026).
+- [3]“USB To TTL Serial 3.3V Adapter Cable FT232RL” Dtechelectronics.com, 2026. https://www.dtechelectronics.com/dtech-ftdi-usb-to-ttl-serial-3-3v-adapter-cable-ft232rl-chip-6ft-1-8m-black-tx-rx-signal-4-pin-0-1-inch-pitch-female-socket-windows-10-8-7-xp-vista_p319.html (accessed Feb. 05, 2026).
+‌
+‌
+‌
 
 
 
